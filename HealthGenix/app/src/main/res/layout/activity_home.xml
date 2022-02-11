@@ -1,0 +1,144 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="20dp">
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+            <Button
+                android:id="@+id/btnStartDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="35dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="53dp"
+                android:width="150dp"
+                android:text="Start Date" />
+
+            <TextView
+                android:id="@+id/startDateDisplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/btnStartDate"
+                android:layout_alignBottom="@+id/btnStartDate"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_toEndOf="@+id/btnStartDate"
+                android:layout_toRightOf="@+id/btnStartDate"
+                android:text="TextView" />
+
+            <Button
+                android:id="@+id/btnEndDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnStartDate"
+                android:layout_alignStart="@+id/btnStartDate"
+                android:layout_alignLeft="@+id/btnStartDate"
+                android:layout_marginTop="24dp"
+                android:width="150dp"
+                android:text="End Date" />
+
+            <TextView
+                android:id="@+id/endDateDisplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/btnEndDate"
+                android:layout_alignStart="@+id/startDateDisplay"
+                android:layout_alignLeft="@+id/startDateDisplay"
+                android:layout_alignBottom="@+id/btnEndDate"
+                android:text="TextView" />
+
+            <Button
+                android:id="@+id/btnCalculateAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnEndDate"
+                android:layout_alignStart="@+id/btnEndDate"
+                android:layout_alignLeft="@+id/btnEndDate"
+                android:layout_marginTop="30dp"
+                android:width="150dp"
+                android:text="Calculate Age" />
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnCalculateAge"
+                android:layout_alignStart="@+id/btnCalculateAge"
+                android:layout_alignLeft="@+id/btnCalculateAge"
+                android:layout_marginTop="30dp"
+                android:width="150dp"
+                android:text="Register" />
+
+
+            <TextView
+                android:id="@+id/txtResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnRegister"
+                android:layout_alignStart="@+id/btnRegister"
+                android:layout_alignLeft="@+id/btnRegister"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="57dp"
+                android:text=""
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/txtMonthDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtResult"
+                android:layout_alignStart="@+id/txtResult"
+                android:layout_alignLeft="@+id/txtResult"
+                android:layout_marginTop="21dp"
+                android:text=""
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/txtWeekDays"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtMonthDay"
+                android:layout_alignStart="@+id/txtMonthDay"
+                android:layout_alignLeft="@+id/txtMonthDay"
+                android:layout_marginTop="18dp"
+                android:text=""
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/txtTotalDays"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtWeekDays"
+                android:layout_alignStart="@+id/txtWeekDays"
+                android:layout_alignLeft="@+id/txtWeekDays"
+                android:layout_marginTop="25dp"
+                android:text=""
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="24sp" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
